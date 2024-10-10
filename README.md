@@ -17,7 +17,7 @@ apt install sudo
 
 ### Adicionar usuario al grupo sudo
 
-gpasswd sudo -a <usuario>
+gpasswd sudo -a usuario
 
 
 ## Acualizar el sistema
@@ -87,7 +87,7 @@ apt -y install build-essential make automake cmake autoconf
 
 apt -y install gdebi
 
-### Isntalación de codecs multiumedia
+### Instalación de codecs multiumedia
 
 apt -y install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-qt6 gstreamer1.0-pipewire gstreamer1.0-pulseaudio gstreamer1.0-vaapi gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad-apps gstreamer1.0-libcamera gstreamer-qapt ffmpeg sox twolame vorbis-tools lame faad mencoder
 
@@ -121,7 +121,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 apt install fonts-freefont-ttf fonts-freefont-otf fonts-inconsolata fonts-droid-fallback xfonts-terminus fonts-droid-fallback ttf-bitstream-vera fonts-cantarell fonts-liberation fonts-oflb-asana-math fonts-mathjax
 
-### Fuentes de microsoft, necesito VPN porque se descargan de  https://downloads.sourceforge.net
+### Fuentes de microsoft, se descargan de  https://downloads.sourceforge.net
 
 apt-get install ttf-mscorefonts-installer
 
@@ -180,7 +180,7 @@ export PATH=$PATH:/usr/local/go/bin
 
 ## Instalacion de nodejs
 
-## Desde el propio usuario, no es necesario root aqui
+### Desde el propio usuario, no es necesario root aqui
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 
