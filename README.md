@@ -99,6 +99,11 @@ apt -y install vlc
 
 apt -y install audacious
 
+museeks tiene un filtro global, algo que no he encontrado en audacious
+
+Se pude descargar el .deb desde aqui
+https://github.com/martpie/museeks/releases
+
 ### Instalación de rsync
 
 apt -y install rsync
@@ -192,6 +197,9 @@ __Esto instalara la version 20 de nodejs__
 
 npm install --global yarn
 
+## Instalar pnpm
+
+curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 ## Crear llave SSH para los repositorios de git
 
@@ -203,7 +211,7 @@ ssh-add -l  Para mostrar que la llave esta cargada
 
 cat /home/<usuario>/.ssh/<nombre_llave>.pub
 
-El contenido se __<nombre_llave>__ .pub es lo que se inserta el servidor de git, como GitHub
+El contenido de __<nombre_llave>__ .pub es lo que se inserta el servidor de git, como GitHub
 
 _Para comprobar con gitHub:_
 
@@ -212,6 +220,19 @@ ssh -T git@github.com
 ## Instalacion de algunas herramientas utiles
 
 apt install meld timeshift gedit gedit-plugins gparted ghex git git-cola
+
+### Para crear lanzador personalizado de aplicaciones
+
+instalar arronax
+
+https://www.florian-diesch.de/software/arronax/#
+
+__En debian12 la version 0.8 dio problemas, manualmente se editaron los ficheros
+de instalación segun el error.__
+
+## Informacion de archivos multimedia
+
+apt install mediainfo-gui/stable mediainfo/stable
 
 
 ## Limpieza y reiniciar
