@@ -28,7 +28,7 @@ apt upgrade
 
 ## Configurar Swap del sistema
 
-_Como tenemos SSD no creamos particion de swap, usamos zram y creamos un fichero de swap de reserva
+_Como tenemos SSD no creamos particion de swap, usamos zram y creamos un fichero de swap de reserva_
 
 ### Crear fichero de swap:
 
@@ -240,7 +240,5 @@ apt install mediainfo-gui/stable mediainfo/stable
 apt clean
 
 apt autoremove
-
-apt --configure -a
 
 reboot
