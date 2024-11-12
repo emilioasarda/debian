@@ -309,15 +309,19 @@ apt install mediainfo-gui/stable mediainfo/stable
 
 ## Virtualizacion
 
-instalar qemu-kvm
+### Instalar qemu-kvm
 
 ```bash
 sudo apt install qemu-kvm qemu-system qemu-utils python3 python3-pip libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon virt-manager
 ```
 
+### Comprobar si el servicio inicio correctamente
+
 ```bash
 systemctl status libvirtd.service
 ```
+
+### Adicionar permisos de usuario
 
 ```bash
 sudo usermod -aG libvirt $USER
